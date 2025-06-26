@@ -1,0 +1,45 @@
+SELECT * 
+FROM Employees;
+
+SELECT name, department 
+FROM Employees;
+
+SELECT * 
+FROM Employees 
+WHERE department = 'Sales';
+
+
+SELECT * 
+FROM Employees 
+WHERE department = 'Sales' AND salary > 50000;
+
+SELECT * 
+FROM Employees 
+WHERE department = 'HR' OR department = 'IT';
+
+SELECT * 
+FROM Employees 
+WHERE name LIKE '%son';  -- ends with 'son'
+
+SELECT * 
+FROM Employees 
+WHERE salary BETWEEN 40000 AND 60000;
+
+-- Ascending (default)
+SELECT * 
+FROM Employees 
+ORDER BY salary;
+
+-- Descending
+SELECT * 
+FROM Employees 
+ORDER BY salary DESC;
+
+SELECT * 
+FROM Employees 
+LIMIT 5;
+
+
+
+
+
