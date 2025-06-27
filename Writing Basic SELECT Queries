@@ -8,7 +8,6 @@ SELECT *
 FROM Employees 
 WHERE department = 'Sales';
 
-
 SELECT * 
 FROM Employees 
 WHERE department = 'Sales' AND salary > 50000;
